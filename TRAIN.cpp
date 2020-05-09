@@ -849,7 +849,7 @@ void FNNTrain_Random(FNN& fnn, int times, char* optim, int L, int* m, bool first
 }
 
 int main() {
-    //srand((unsigned)time(NULL));
+    srand((unsigned)time(NULL));
     int L = 3;											    //神经网络的层数
     int m[] = { img_size, 300,50, classes };				//每一层的结点数：m[1:]
     char optimizer[] = "Adam";
