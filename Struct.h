@@ -1,6 +1,5 @@
 #ifndef STRUCT_H
 #define STRUCT_H
-//Ìí¼ÓÒ»¾ä×¢ÊÍ
 struct list {
 	double* list_elem;
 	int list_elem_size;
