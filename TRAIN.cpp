@@ -9,7 +9,7 @@
 using namespace std;
 
 const int batch = 5;
-const int batch_sizes = 10;	//nums of dataes
+const int batch_sizes = 10;	    //nums of dataes
 const int img_size = 28 * 28;	//sizes of data
 const int classes = 10;	    	//nums of classes
 const int times = 30;	    	//nums of iterations
@@ -853,15 +853,14 @@ int main() {
     int L = 3;											    //神经网络的层数
     int m[] = { img_size, 300,50, classes };				//每一层的结点数：m[1:]
     char optimizer[] = "Adam";
-    int* mm = m;
     int random_numbers = 5000;
     bool first = true;
     bool random = true;
 
     FNN Net;
-    FNNTrain(Net, times, optimizer, L, mm,first);
+    FNNTrain(Net, times, optimizer, L, m, first);
     //saveDataFromMnist_random(random_numbers);
-    //FNNTrain_Random(Net, times, optimizer, L, mm, first);
+    //FNNTrain_Random(Net, times, optimizer, L, m, first);
     memset(&Net, 0, sizeof(Net));
     return 1;
 }
