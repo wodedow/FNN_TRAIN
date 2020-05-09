@@ -22,6 +22,11 @@
 
 `readDataFromMnist_train_con` : 从数据集中继续读取数据，并重复 `3-5`，直到满足停止条件。
 
+数据的存储
+* `save_weight_arrays` : 存储权重矩阵 `w` 到TXT文件
+* `save_bias` : 存储偏置 `b` 
+* `save_offset` : 存储图像与标签文件的文件指针，方便下次使用
+
 ***
 程序主体上是采用C编写，实际上还是使用了C++的一些性质，如 `new` 函数。
 
