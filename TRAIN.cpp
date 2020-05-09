@@ -856,7 +856,7 @@ int main() {
     int random_numbers = 5000;
     bool first = true;
     bool random = true;
-
+    //¼ÓÒ»ĞĞ×¢ÊÍ
     FNN Net;
     FNNTrain(Net, times, optimizer, L, m, first);
     //saveDataFromMnist_random(random_numbers);
