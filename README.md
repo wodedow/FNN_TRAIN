@@ -19,6 +19,7 @@
 3. `forward` : 前向传播更新各层的输入输出
 4. `backward` : 反向传播得到各参数的偏导
 5. `parameters_update_Adam` : 选择优化方法 `Adam` 更新参数
+6. 重复 `3-5`，直到满足停止条件
 
 `readDataFromMnist_train_con` : 从数据集中继续读取数据，并重复 `3-5`，直到满足停止条件。
 
